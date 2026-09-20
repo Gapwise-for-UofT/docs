@@ -1,9 +1,9 @@
 ---
 title: Gapwise Data
-description: Canonical UTM campus data, schemas, provenance, distribution, and reuse.
+description: Canonical University of Toronto campus data, schemas, provenance, distribution, and reuse.
 ---
 
-Gapwise Data is the canonical public source for the UTM campus facts and geometry used across the Gapwise ecosystem.
+Gapwise Data is the canonical public source for University of Toronto campus facts and geometry used across the Gapwise ecosystem. Building identity and map geometry cover UTM, UTSG, and UTSC; the current reviewed entrance/routing pipeline and production raw-data distribution are UTM-specific.
 
 - **Portal:** `https://data.gapwise.ca`
 - **Entrance contributor:** `https://data.gapwise.ca/contribute`
@@ -18,7 +18,7 @@ Gapwise Data is the canonical public source for the UTM campus facts and geometr
 
 The main `gapwise` repository owns deterministic behavior: route calculation, timetable semantics, gap planning, API orchestration, SDK contracts, and product presentation.
 
-> **Gapwise Data knows what UTM is. Gapwise knows what to do with that knowledge.**
+> **Gapwise Data owns campus facts. Gapwise owns product behavior.**
 
 ## Does the app fetch Data at runtime?
 

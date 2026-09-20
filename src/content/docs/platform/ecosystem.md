@@ -5,7 +5,7 @@ description: How the seven Gapwise repositories, public SDKs, data, mobile, AI, 
 
 Gapwise is one product ecosystem across seven first-party repositories. Repository boundaries separate deployment, trust, and ownership; they do not create parallel sources of truth.
 
-All canonical repositories are owned by the **Gapwise for UofT** GitHub organization: `https://github.com/Gapwise-for-UofT`. Andrew Muratov remains the creator and primary maintainer.
+All canonical repositories are owned by the **Gapwise** GitHub organization at `https://github.com/Gapwise-for-UofT`. Andrew Muratov remains the creator and primary maintainer.
 
 ## Repository ownership
 

@@ -3,7 +3,7 @@ title: Dataset catalog
 description: Major canonical UTM campus datasets published by Gapwise Data.
 ---
 
-The canonical repository tree lives under `data/utm`. Production Data builds distribute the validated tree at `https://data.gapwise.ca/datasets/utm/latest/`.
+The currently published canonical UTM subtree lives under `data/utm`. Production Data builds distribute that validated tree at `https://data.gapwise.ca/datasets/utm/latest/`. Canonical UTSG and UTSC identity and geometry datasets live in their own repository directories but are not yet included in this raw production channel.
 
 ## Major surfaces
 
