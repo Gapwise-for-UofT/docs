@@ -2,7 +2,7 @@
 
 `docs` is the canonical public documentation surface for the seven-repository Gapwise product ecosystem. It describes released behavior and data owned elsewhere; it must not become an independent source of product semantics or campus facts.
 
-All seven first-party product repositories are owned by the **Gapwise for UofT** GitHub organization (`Gapwise-for-UofT`). Organization-wide community/default files live in `.github`. Andrew Muratov remains the creator and primary maintainer.
+All seven first-party product repositories are owned by the **Gapwise** GitHub organization (`Gapwise-for-UofT`). Organization-wide community/default files live in `.github`. Andrew Muratov remains the creator and primary maintainer.
 
 ## Owning repositories
 
@@ -12,7 +12,7 @@ All seven first-party product repositories are owned by the **Gapwise for UofT**
 | `Gapwise-for-UofT/android` | native Android implementation, Android device integration, persistence adapters, and Android distribution behavior |
 | `Gapwise-for-UofT/ios` | native iOS implementation, Apple-platform integration, persistence adapters, and iOS distribution behavior |
 | `Gapwise-for-UofT/ai` | OAuth/MCP delegation, tool schemas, permissions, bounded mutations, AI compatibility evidence |
-| `Gapwise-for-UofT/data` | **canonical public UTM campus facts and geometry**, entrances, routing graph data, provenance, schemas, evidence, attribution, validation, and reuse |
+| `Gapwise-for-UofT/data` | **canonical public University of Toronto campus facts and geometry**, entrances, routing graph data, provenance, schemas, evidence, attribution, validation, and reuse |
 | `Gapwise-for-UofT/docs` | released public developer documentation and documentation information architecture |
 | `Gapwise-for-UofT/status` | operational health and incident communication |
 
@@ -20,7 +20,7 @@ All seven first-party product repositories are owned by the **Gapwise for UofT**
 
 ## Product scope
 
-Gapwise timetable identity supports UTM, UTSG, UTSC, and mixed-campus schedules. The first-party public campus API, map/routing graph, places, and open-data distribution are currently UTM-focused. Documentation must preserve that boundary instead of implying equivalent map/routing coverage at all three campuses.
+Gapwise timetable identity and web building maps support UTM, UTSG, UTSC, and mixed-campus schedules. The first-party public campus API, reviewed entrance and pedestrian route graph, places, and production raw-data distribution currently cover UTM. Documentation must preserve that specific boundary instead of implying equivalent routing coverage at all three campuses.
 
 ## Current developer-platform state
 
@@ -43,7 +43,7 @@ TypeScript and Python are equal first-party SDKs. Documentation should provide c
 ## Documentation rules
 
 1. OpenAPI + core implementation own public HTTP behavior and deterministic calculations.
-2. `data` owns raw public UTM campus facts, geometry, routing graph data, provenance, and evidence.
+2. `data` owns raw public University of Toronto campus facts, geometry, routing graph data, provenance, and evidence.
 3. SDK docs follow released package/source behavior and never invent methods or types.
 4. Registry claims are evidence-based: reserved/configured is not the same as published.
 5. Runtime claims are evidence-based: Node/Bun/Deno/browser support should reflect CI/release verification rather than assumptions.

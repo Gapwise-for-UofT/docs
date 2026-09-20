@@ -6,7 +6,7 @@
 
 ### Build on the deterministic platform behind Gapwise.
 
-**Official documentation for the Gapwise public UTM campus API, OpenAPI contract, published JavaScript/TypeScript and Python SDKs, data/provenance model, security architecture, native-client integration, and permissioned AI/MCP boundary.**
+**Official documentation for the Gapwise University of Toronto platform: public campus API, OpenAPI contract, SDKs, data/provenance model, security architecture, native-client integration, and permissioned AI/MCP boundary.**
 
 [![Live Docs](https://img.shields.io/badge/Live_Docs-docs.gapwise.ca-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://docs.gapwise.ca)
 [![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1-6BA539?style=for-the-badge&logo=openapiinitiative&logoColor=white)](https://api.gapwise.ca/openapi.json)
@@ -25,7 +25,7 @@
 
 This repository is the canonical public developer-documentation surface for **Gapwise**, a privacy-first timetable and campus-intelligence platform for University of Toronto students created and engineered by **Andrew Muratov**.
 
-Gapwise timetable identity supports **UTM, UTSG, UTSC, and mixed-campus schedules**. The public campus API, route graph, map evidence, places, and open-data distribution documented here are currently **UTM-focused**. The docs preserve that distinction rather than treating university-wide timetable support as university-wide routing coverage.
+Gapwise timetable identity and web building maps support **UTM, UTSG, UTSC, and mixed-campus schedules**. The public campus API, reviewed entrance and pedestrian route graph, campus places, and production raw-data distribution documented here currently cover UTM. The docs preserve that distinction without presenting Gapwise itself as a UTM product.
 
 The ecosystem includes the core web/PWA, native Android and iOS clients, deterministic public API and published SDKs, canonical campus-data/provenance layer, permissioned OAuth/MCP AI integration, these developer docs, and an independent operational status service.
 
@@ -35,7 +35,7 @@ The docs follow released first-party contracts rather than inventing parallel be
 - [`android`](https://github.com/Gapwise-for-UofT/android) owns the native Android implementation;
 - [`ios`](https://github.com/Gapwise-for-UofT/ios) owns the native iOS implementation;
 - [`ai`](https://github.com/Gapwise-for-UofT/ai) owns live MCP/OAuth delegation behavior;
-- [`data`](https://github.com/Gapwise-for-UofT/data) owns canonical public UTM campus facts and provenance;
+- [`data`](https://github.com/Gapwise-for-UofT/data) owns canonical public University of Toronto campus facts and provenance;
 - [`status`](https://github.com/Gapwise-for-UofT/status) owns operational state and incident communication.
 
 ---
@@ -88,7 +88,7 @@ The public API exposes campus intelligence only. It does not expose student time
 - `android` consumes those semantics for the native Android experience without creating a second product engine.
 - `ios` consumes those semantics for the native iOS experience without creating a second product engine.
 - `ai` is authoritative for the live MCP/OAuth tool, permission, delegation, and bounded-mutation behavior.
-- `data` owns canonical public UTM campus facts, geometry, provenance, evidence, schemas, and distribution.
+- `data` owns canonical public University of Toronto campus facts, geometry, provenance, evidence, schemas, and distribution.
 - `status` owns current operational monitoring and incident-communication state.
 - `docs` describes released behavior and preserves uncertainty rather than turning unknown facts into confident claims.
 - University-wide timetable support must not be documented as equivalent university-wide campus-routing coverage.
