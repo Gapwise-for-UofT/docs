@@ -85,7 +85,7 @@ This design reduces exposure from direct database-record disclosure. It does **n
 
 **Implementation-verified.** Private MCP execution requires both verified OAuth authority and an active student grant. Results are tool-scoped rather than unrestricted account exports. The delegated snapshot excludes the raw ACORN file, friends, precise/live location, core session tokens, primary private-state keys, unrestricted database credentials, and unrelated browser state.
 
-Academic timetable meetings are read-only. The four current write capabilities operate on bounded personal items or gap preferences, require their relevant permission and current revision, and queue typed intent for the first-party app rather than directly rewriting canonical encrypted state. See [Permissions & writes](/ai/permissions/) and the CI-checked [tool catalog](/ai/tools/).
+Academic timetable meetings are read-only. The sole current write capability updates gap preferences with the relevant permission and current revision, queuing typed intent for the first-party app rather than directly rewriting canonical encrypted state. Personal Item tools are retired. See [Permissions & writes](/ai/permissions/) and the CI-checked [tool catalog](/ai/tools/).
 
 Authorized plaintext exists transiently in the Gapwise AI runtime during a permitted request, so this service is not zero knowledge. The external AI client/provider may separately process content visible in prompts and tool results under its own policies.
 

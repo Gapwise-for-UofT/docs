@@ -120,7 +120,7 @@ Requires Node.js 22 or newer.
 ```bash
 git clone https://github.com/Gapwise-for-UofT/docs.git
 cd docs
-npm install
+npm ci
 npm run check
 npm run build
 npm run dev
@@ -133,6 +133,8 @@ npm run dev
 ## Independent project
 
 > **Gapwise is an independent student software project created by Andrew Muratov. It is not affiliated with, endorsed by, or an official service of the University of Toronto.**
+
+Original documentation and site code are available under the [MIT License](LICENSE).
 
 <div align="center">
 

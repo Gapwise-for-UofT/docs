@@ -23,7 +23,7 @@ Confirm that the timetable is current inside Gapwise and that the corresponding 
 
 ## A write fails
 
-Personal-item and preference changes require explicit write permission and the current Gapwise AI snapshot revision. A stale, conflicting, or semantically unsafe write is expected to fail closed. Refresh the current context and retry only if the requested change still fits.
+Gap-preference changes require explicit write permission and the current Gapwise AI snapshot revision. A stale, conflicting, or semantically unsafe write is expected to fail closed. Refresh the current context and retry only if the requested change still fits. Personal Item writes are retired.
 
 Imported/source-backed academic meetings cannot be created, edited, or deleted through the AI connector.
 

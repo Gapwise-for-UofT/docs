@@ -10,6 +10,8 @@ const permissionsDoc = await readFile(
   new URL("src/content/docs/ai/permissions.md", root),
   "utf8",
 );
+const homeDoc = await readFile(new URL("src/content/docs/index.mdx", root), "utf8");
+const quickstartDoc = await readFile(new URL("src/content/docs/quickstart.md", root), "utf8");
 
 const section = (document, heading, nextHeading) => {
   const start = document.indexOf(heading);
@@ -65,6 +67,29 @@ assert.match(
   toolsDoc,
   new RegExp(`\\b${contract.registeredToolCount} tools\\b`),
   "The tools guide has a stale registered-tool count",
+);
+assert.match(
+  homeDoc,
+  new RegExp(`\\*\\*${contract.registeredToolCount} tools total\\*\\*`),
+  "The developer home page has a stale registered-tool count",
+);
+for (const [count, label] of [
+  [publicReadTools.length, "stateless public campus reads"],
+  [privateReadTools.length, "permissioned private reads/planning tools"],
+  [privateWriteTools.length, "permissioned private write tool"],
+]) {
+  assert.match(
+    homeDoc,
+    new RegExp(`\\*\\*${count} ${label}`),
+    `The developer home page has a stale ${label} count`,
+  );
+}
+assert.match(
+  quickstartDoc,
+  new RegExp(
+    `\\*\\*${contract.registeredToolCount} tools total: ${publicReadTools.length} public \\+ ${privateReadTools.length + privateWriteTools.length} private\\*\\*`,
+  ),
+  "The quickstart has a stale public/private tool count",
 );
 assert.match(
   toolsDoc,

@@ -54,7 +54,7 @@ Important boundaries:
 
 - Public campus tools do not read a Gapwise account, private timetable, friends, or precise live location.
 - Academic timetable meetings are **read-only** through AI.
-- Personal-item and delegated-preference writes require the corresponding granted permission.
+- The sole current write updates delegated gap preferences with the corresponding granted permission; Personal Item tools are retired.
 - Writes are revision-aware; stale state is not silently overwritten.
 - Write success means Gapwise accepted a typed queued action. It does not mean the AI client directly rewrote canonical timetable state.
 
