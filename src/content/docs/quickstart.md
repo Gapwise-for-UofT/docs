@@ -24,11 +24,11 @@ Use Gapwise AI when a compatible remote MCP client needs deterministic public UT
 
 - Remote MCP resource: `https://ai.gapwise.ca/api/mcp`
 - OAuth protected-resource metadata: `https://ai.gapwise.ca/.well-known/oauth-protected-resource`
-- Four stateless public campus tools do not require private Gapwise account context.
-- Thirteen private tools require explicit delegation and the relevant permissions.
+- Seven stateless public campus tools do not require private Gapwise account context.
+- Thirteen private tools require explicit delegation and the relevant permissions (twelve reads and one write).
 - Private access is permissioned, minimized, revision-aware, and revocable.
 - Academic timetable meetings are read-only through the AI boundary.
-- The live service currently exposes **17 tools total: 4 public + 13 private**.
+- The live service currently exposes **20 tools total: 7 public + 13 private**.
 
 **[Open the AI & MCP guide →](/ai/)** · **[Connect an AI client →](/ai/connect/)** · [Review privacy & security](/ai/privacy/)
 

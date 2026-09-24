@@ -64,7 +64,7 @@ The private-state store receives an account-bound encrypted payload, but this is
 | Core boundary ↔ private-state store | Account ownership metadata and encrypted payload | Account scoping and database authorization policies; privileged paths remain server-side | **Implementation-verified**; production parity **confirmation required** |
 | Browser → AI delegation | Permission selection and minimized derived snapshot | Optional explicit grant; excludes raw `.ics`, friends, precise/live location, session tokens, core encryption keys, and unrelated browser state | **Implementation-verified** |
 | AI client/provider ↔ MCP | OAuth credential; permitted tool arguments/results | OAuth audience validation plus active fine-grained delegation; least-authority tool schemas | **Implementation-verified** |
-| MCP → first-party app | Typed personal-item/preference action with expected revision | Queued, not direct canonical mutation; read-only imported academic meetings; revocable authority | **Implementation-verified** |
+| MCP → first-party app | Typed gap-preference action with expected revision | Queued, not direct canonical mutation; read-only imported academic meetings; revocable authority | **Implementation-verified** |
 | Runtime → operational logs | Minimized diagnostic/security metadata | No credentials, auth artifacts, encryption material, or unnecessary private content is the handling expectation | **Process commitment**; destinations/retention **confirmation required** |
 
 ## Reviewer boundary notes

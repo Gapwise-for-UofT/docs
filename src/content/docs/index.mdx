@@ -107,14 +107,14 @@ Gapwise AI is a separate provider-neutral remote MCP service. The client supplie
 - AI service: `https://ai.gapwise.ca`
 - Source: `https://github.com/Gapwise-for-UofT/ai`
 
-The live release surface exposes **17 tools total**:
+The live release surface exposes **20 tools total**:
 
-- **4 stateless public campus tools** for building lookup, building details, campus routing, and generic gap-window planning;
-- **9 permissioned private reads/planning tools** over explicitly delegated student context;
-- **4 permissioned private write tools** for bounded personal items and selected gap preferences.
+- **7 stateless public campus reads** for UTM building, place, route, and gap-window context;
+- **12 permissioned private reads/planning tools** over explicitly delegated student context;
+- **1 permissioned private write tool** for a bounded gap-preference update.
 
 Public campus tools do not authenticate or expose a student's private timetable, friends, precise location, or sync state. Private tools require the production Gapwise OAuth/delegation boundary. Academic meetings remain read-only and cannot be created, edited, or deleted by an AI client.
 
 Broad named-client compatibility is still a release gate. These docs do not claim ChatGPT, Claude, or another named client as fully verified until the production OAuth/read/write/revoke matrices are complete. See [Client compatibility](/ai/compatibility/).
 
-> Gapwise is an independent project and is not an official University of Toronto service unless explicitly stated otherwise.
+> Gapwise is an independent student-built project. It is not affiliated with, endorsed by, or an official service of the University of Toronto.
