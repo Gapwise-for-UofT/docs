@@ -75,7 +75,10 @@ export default defineConfig({
         },
         {
           label: "Guides",
-          items: [{ label: "Recipes", slug: "guides/recipes" }],
+          items: [
+            { label: "Recipes", slug: "guides/recipes" },
+            { label: "Add a university", slug: "guides/add-university" },
+          ],
         },
         {
           label: "Platform",

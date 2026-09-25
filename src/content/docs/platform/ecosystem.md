@@ -1,9 +1,9 @@
 ---
 title: Ecosystem architecture
-description: How the seven Gapwise repositories, public SDKs, data, mobile, AI, docs, and status surfaces fit together.
+description: How the Gapwise application, university adapters, public SDKs, data, mobile, AI, docs, and status surfaces fit together.
 ---
 
-Gapwise is one product ecosystem across seven first-party repositories. Repository boundaries separate deployment, trust, and ownership; they do not create parallel sources of truth.
+Gapwise is one product ecosystem. `gapwise` contains the single web application for all university editions. Repository boundaries separate deployment, trust, and ownership; they do not create parallel sources of truth.
 
 All canonical repositories are owned by the **Gapwise** GitHub organization at `https://github.com/Gapwise-for-UofT`. Andrew Muratov remains the creator and primary maintainer.
 
@@ -16,8 +16,21 @@ All canonical repositories are owned by the **Gapwise** GitHub organization at `
 | `Gapwise-for-UofT/ios` | native iOS UX, device integration, secure mobile persistence, and iOS distribution |
 | `Gapwise-for-UofT/ai` | OAuth/MCP delegation, permission checks, minimized delegated snapshots, and bounded AI actions |
 | `Gapwise-for-UofT/data` | campus-data provenance, evidence, schemas, attribution, transformations, and reuse guidance |
+| `Gapwise-for-UofT/cli` | repeatable university scaffolding and validation commands |
 | `Gapwise-for-UofT/docs` | canonical public documentation of released first-party contracts |
 | `Gapwise-for-UofT/status` | independently deployed service health and incident communication |
+
+The `carleton` and `carleton-data` repositories remain available as transitional references and rollback sources. The canonical web implementation and campus data are moving into `gapwise` and `data`, respectively. The JavaScript and Python SDKs remain in `gapwise/sdk`; a separate SDK repository would duplicate stable published source.
+
+## University edition flow
+
+```text
+hostname -> universities.json -> university timetable adapter -> shared meetings
+                                                     |                   |
+data/universities/<id>/campus.json -> campus catalog + path graph -> shared UI/routing
+```
+
+U of T is selected at `gapwise.ca`. The Carleton host is registered in the manifest, but public deployment must be verified before describing it as live. See [Add a university](/guides/add-university/) for the scaffold, data, testing, and deployment workflow.
 
 ## Source-of-truth flow
 
