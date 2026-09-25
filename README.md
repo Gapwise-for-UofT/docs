@@ -6,7 +6,7 @@
 
 ### Build on the deterministic platform behind Gapwise.
 
-**Official documentation for the Gapwise University of Toronto platform: public campus API, OpenAPI contract, SDKs, data/provenance model, security architecture, native-client integration, and permissioned AI/MCP boundary.**
+**Official documentation for Gapwise: multi-university web architecture, public campus API, SDKs, data provenance, security, native clients, and permissioned AI/MCP integration.**
 
 [![Live Docs](https://img.shields.io/badge/Live_Docs-docs.gapwise.ca-111111?style=for-the-badge&logo=vercel&logoColor=white)](https://docs.gapwise.ca)
 [![OpenAPI 3.1](https://img.shields.io/badge/OpenAPI-3.1-6BA539?style=for-the-badge&logo=openapiinitiative&logoColor=white)](https://api.gapwise.ca/openapi.json)
@@ -23,7 +23,7 @@
 
 ## What this repository is
 
-This repository is the canonical public developer-documentation surface for **Gapwise**, a privacy-first timetable and campus-intelligence platform for University of Toronto students created and engineered by **Andrew Muratov**.
+This repository is the canonical public developer-documentation surface for **Gapwise**, a privacy-first timetable and campus-intelligence platform created and engineered by **Andrew Muratov**. U of T is live; Carleton is being migrated into the shared web application.
 
 Gapwise timetable identity and web building maps support **UTM, UTSG, UTSC, and mixed-campus schedules**. The public campus API, reviewed entrance and pedestrian route graph, campus places, and production raw-data distribution documented here currently cover UTM. The docs preserve that distinction without presenting Gapwise itself as a UTM product.
 
@@ -35,7 +35,8 @@ The docs follow released first-party contracts rather than inventing parallel be
 - [`android`](https://github.com/Gapwise-for-UofT/android) owns the native Android implementation;
 - [`ios`](https://github.com/Gapwise-for-UofT/ios) owns the native iOS implementation;
 - [`ai`](https://github.com/Gapwise-for-UofT/ai) owns live MCP/OAuth delegation behavior;
-- [`data`](https://github.com/Gapwise-for-UofT/data) owns canonical public University of Toronto campus facts and provenance;
+- [`data`](https://github.com/Gapwise-for-UofT/data) owns canonical public campus facts and provenance for supported universities;
+- [`cli`](https://github.com/Gapwise-for-UofT/cli) scaffolds new university adapters and campus datasets;
 - [`status`](https://github.com/Gapwise-for-UofT/status) owns operational state and incident communication.
 
 ---
