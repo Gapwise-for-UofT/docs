@@ -23,9 +23,19 @@
 
 ## What this repository is
 
-This repository is the canonical public developer-documentation surface for **Gapwise**, a privacy-first timetable and campus-intelligence platform created and engineered by **Andrew Muratov**. U of T is live; Carleton is being migrated into the shared web application.
+This repository is the canonical public developer-documentation surface for **Gapwise**, a free and open-source multi-university timetable and campus-intelligence platform created and engineered by **Andrew Muratov**.
 
-Gapwise timetable identity and web building maps support **UTM, UTSG, UTSC, and mixed-campus schedules**. The public campus API, reviewed entrance and pedestrian route graph, campus places, and production raw-data distribution documented here currently cover UTM. The docs preserve that distinction without presenting Gapwise itself as a UTM product.
+Gapwise currently supports **seven universities across Canada**:
+
+1. **University of Toronto** (`gapwise.ca`) — UTM, St. George, Scarborough
+2. **Carleton University** (`carleton.gapwise.ca`) — Ottawa campus
+3. **Toronto Metropolitan University** (`tmu.gapwise.ca`) — Downtown Toronto campus
+4. **Queen's University** (`queens.gapwise.ca`) — Kingston campus
+5. **Wilfrid Laurier University** (`laurier.gapwise.ca`) — Waterloo campus
+6. **York University** (`york.gapwise.ca`) — Keele campus
+7. **McMaster University** (`mcmaster.gapwise.ca`) — Hamilton campus
+
+The documentation describes the multi-university architecture, public campus API, SDKs, data layers, and permissioned AI/MCP integration without presenting Gapwise as a single-institution product.
 
 The ecosystem includes the core web/PWA, native Android and iOS clients, deterministic public API and published SDKs, canonical campus-data/provenance layer, permissioned OAuth/MCP AI integration, these developer docs, and an independent operational status service.
 
@@ -133,7 +143,7 @@ npm run dev
 
 ## Independent project
 
-> **Gapwise is an independent student software project created by Andrew Muratov. It is not affiliated with, endorsed by, or an official service of the University of Toronto.**
+> **Gapwise is an independent student software project created by Andrew Muratov. It is not affiliated with, endorsed by, or an official service of the University of Toronto, Carleton University, Toronto Metropolitan University, Queen's University, Wilfrid Laurier University, York University, or McMaster University.**
 
 Original documentation and site code are available under the [MIT License](LICENSE).
 

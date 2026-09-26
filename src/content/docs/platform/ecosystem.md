@@ -20,7 +20,7 @@ All canonical repositories are owned by the **Gapwise** GitHub organization at `
 | `GapwiseHQ/docs` | canonical public documentation of released first-party contracts |
 | `GapwiseHQ/status` | independently deployed service health and incident communication |
 
-The `carleton` and `carleton-data` repositories remain available as transitional references and rollback sources. The canonical web implementation and campus data are moving into `gapwise` and `data`, respectively. The JavaScript and Python SDKs remain in `gapwise/sdk`; a separate SDK repository would duplicate stable published source.
+The `carleton` and `carleton-data` repositories remain available as archived read-only references. The canonical web implementation and campus data have been fully consolidated into `gapwise` and `data`, respectively. The JavaScript and Python SDKs remain in `gapwise/sdk`; a separate SDK repository would duplicate stable published source.
 
 ## University edition flow
 
@@ -30,7 +30,7 @@ hostname -> universities.json -> university timetable adapter -> shared meetings
 data/universities/<id>/campus.json -> campus catalog + path graph -> shared UI/routing
 ```
 
-U of T is selected at `gapwise.ca`. The Carleton host is registered in the manifest, but public deployment must be verified before describing it as live. See [Add a university](/guides/add-university/) for the scaffold, data, testing, and deployment workflow.
+Gapwise resolves hostnames dynamically: `gapwise.ca` selects U of T, `carleton.gapwise.ca` selects Carleton, `tmu.gapwise.ca` selects TMU, `queens.gapwise.ca` selects Queen's, `laurier.gapwise.ca` selects Laurier, `york.gapwise.ca` selects York, and `mcmaster.gapwise.ca` selects McMaster. See [Add a university](/guides/add-university/) for the scaffold, data, testing, and deployment workflow.
 
 ## Source-of-truth flow
 
