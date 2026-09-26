@@ -5,7 +5,7 @@ description: Add a timetable adapter and reviewed campus data to the shared Gapw
 
 Gapwise has one web application in `gapwise`. The manifest selects an institution by hostname. Timetable adapters return the shared meeting model; Today, Timetable, Gap Plan, Campus Map, and Day Route consume that model and the selected campus catalog. University facts and routing evidence belong in `data`.
 
-The University of Toronto edition is currently live at `gapwise.ca`. Carleton support is being migrated into the shared app; `carleton.gapwise.ca` must be deployed and verified before it can be described as live. The standalone `carleton` and `carleton-data` repositories remain reference and rollback sources.
+Gapwise currently supports 7 universities across Canada: University of Toronto (`gapwise.ca`), Carleton University (`carleton.gapwise.ca`), Toronto Metropolitan University (`tmu.gapwise.ca`), Queen's University (`queens.gapwise.ca`), Wilfrid Laurier University (`laurier.gapwise.ca`), York University (`york.gapwise.ca`), and McMaster University (`mcmaster.gapwise.ca`). The archived `carleton` and `carleton-data` repositories remain historical references.
 
 ## Create a scaffold
 
