@@ -21,6 +21,64 @@ export default defineConfig({
       editLink: {
         baseUrl: "https://github.com/GapwiseHQ/docs/edit/main/",
       },
+      head: [
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image",
+            content: "https://docs.gapwise.ca/og-card.png",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image:secure_url",
+            content: "https://docs.gapwise.ca/og-card.png",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image:width",
+            content: "1200",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image:height",
+            content: "630",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            property: "og:image:alt",
+            content: "Gapwise Developers — Documentation, SDKs, and Campus Data APIs",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:card",
+            content: "summary_large_image",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:image",
+            content: "https://docs.gapwise.ca/og-card.png",
+          },
+        },
+        {
+          tag: "meta",
+          attrs: {
+            name: "twitter:image:alt",
+            content: "Gapwise Developers — Documentation, SDKs, and Campus Data APIs",
+          },
+        },
+      ],
       sidebar: [
         {
           label: "Start",
