@@ -20,7 +20,7 @@ All canonical repositories are owned by the **Gapwise** GitHub organization at `
 | `GapwiseHQ/docs` | canonical public documentation of released first-party contracts |
 | `GapwiseHQ/status` | independently deployed service health and incident communication |
 
-The `carleton` and `carleton-data` repositories remain available as archived read-only references. The canonical web implementation and campus data have been fully consolidated into `gapwise` and `data`, respectively. The JavaScript and Python SDKs remain in `gapwise/sdk`; a separate SDK repository would duplicate stable published source.
+The canonical web implementation and campus data for all supported universities are consolidated into `gapwise` and `data`, respectively. The JavaScript and Python SDKs remain in `gapwise/sdk`; a separate SDK repository would duplicate stable published source.
 
 ## University edition flow
 
