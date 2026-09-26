@@ -40,7 +40,7 @@ Service identity:
 https://ai.gapwise.ca
 ```
 
-Implementation source: [github.com/Gapwise-for-UofT/ai](https://github.com/Gapwise-for-UofT/ai)
+Implementation source: [github.com/GapwiseHQ/ai](https://github.com/GapwiseHQ/ai)
 
 ## Current live surface
 

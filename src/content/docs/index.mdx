@@ -13,7 +13,7 @@ hero:
       link: /data/
       icon: right-arrow
     - text: View on GitHub
-      link: https://github.com/Gapwise-for-UofT
+      link: https://github.com/GapwiseHQ
       variant: minimal
 ---
 
@@ -78,13 +78,13 @@ The canonical public API exposes versioned UTM buildings and places, determinist
 - API base: `https://api.gapwise.ca/v1`
 - OpenAPI 3.1: `https://api.gapwise.ca/openapi.json`
 - Public developer hub: `https://gapwise.ca/developers`
-- Source: `https://github.com/Gapwise-for-UofT/gapwise`
+- Source: `https://github.com/GapwiseHQ/gapwise`
 - JavaScript / TypeScript (npm): `npm install @gapwise/sdk@0.1.1`
 - JavaScript / TypeScript (JSR): `jsr:@gapwise/sdk@0.1.1`
-- JavaScript / TypeScript (GitHub Packages mirror): `@gapwise-for-uoft/sdk@0.1.1`
+- JavaScript / TypeScript (GitHub Packages mirror): `@gapwisehq/sdk` (historical 0.1.1 under `@gapwise-for-uoft/sdk`)
 - Python: `python -m pip install gapwise==0.1.0`
 
-Successful responses use `{ data, meta }`; errors use a nested structured error envelope with a request ID. Both official SDK implementations target the same v1 contract. `@gapwise/sdk@0.1.1` is published on npm and JSR, the same JavaScript SDK is mirrored publicly on GitHub Packages as `@gapwise-for-uoft/sdk@0.1.1`, and `gapwise==0.1.0` is published on PyPI through Trusted Publishing and has been independently clean-installed against the production API. The GitHub Packages mirror uses the organization-scoped package name required by GitHub and does not replace the canonical `@gapwise/sdk` identity.
+Successful responses use `{ data, meta }`; errors use a nested structured error envelope with a request ID. Both official SDK implementations target the same v1 contract. `@gapwise/sdk@0.1.1` is published on npm and JSR, the same JavaScript SDK is mirrored publicly on GitHub Packages as `@gapwisehq/sdk` (historical 0.1.1 under `@gapwise-for-uoft/sdk`), and `gapwise==0.1.0` is published on PyPI through Trusted Publishing and has been independently clean-installed against the production API. The GitHub Packages mirror uses the organization-scoped package name required by GitHub and does not replace the canonical `@gapwise/sdk` identity.
 
 ### Canonical open campus data
 
@@ -105,7 +105,7 @@ Gapwise AI is a separate provider-neutral remote MCP service. The client supplie
 - MCP resource: `https://ai.gapwise.ca/api/mcp`
 - OAuth protected-resource metadata: `https://ai.gapwise.ca/.well-known/oauth-protected-resource`
 - AI service: `https://ai.gapwise.ca`
-- Source: `https://github.com/Gapwise-for-UofT/ai`
+- Source: `https://github.com/GapwiseHQ/ai`
 
 The live release surface exposes **20 tools total**:
 

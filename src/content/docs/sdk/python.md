@@ -7,7 +7,7 @@ The official Python package lives in `sdk/python` in the Gapwise repository, tar
 
 > Release status: `gapwise==0.1.0` is live on PyPI through Trusted Publishing and was verified from a clean Python environment against the production Gapwise API. The matching `python-v0.1.0` GitHub Release mirrors the built wheel, source distribution, and SHA-256 checksums for source-adjacent artifact access.
 
-The TypeScript peer is `@gapwise/sdk@0.1.1`, published canonically on npm and JSR. The same JavaScript artifact is also mirrored on GitHub Packages as `@gapwise-for-uoft/sdk@0.1.1`. See [JavaScript & TypeScript SDK](/sdk/javascript/).
+The TypeScript peer is `@gapwise/sdk@0.1.1`, published canonically on npm and JSR. The same JavaScript artifact is also mirrored on GitHub Packages as `@gapwisehq/sdk` (historical 0.1.1 under `@gapwise-for-uoft/sdk`). See [JavaScript & TypeScript SDK](/sdk/javascript/).
 
 ## Install from PyPI
 

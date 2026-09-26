@@ -3,7 +3,7 @@ title: Contributing campus data
 description: How to correct or extend canonical UTM campus facts without forking product truth.
 ---
 
-Campus-data changes belong in [`Gapwise-for-UofT/data`](https://github.com/Gapwise-for-UofT/data), not in a downstream consumer.
+Campus-data changes belong in [`GapwiseHQ/data`](https://github.com/GapwiseHQ/data), not in a downstream consumer.
 
 ## Entrance contributions
 
@@ -30,7 +30,7 @@ Useful contributions include:
 
 Use a Data repository pull request when the change affects canonical files, validators, schemas, data-production tooling, or other maintainer-owned implementation rather than a field observation that fits the visual contributor.
 
-1. Change the canonical data or data-production tooling in `Gapwise-for-UofT/data`.
+1. Change the canonical data or data-production tooling in `GapwiseHQ/data`.
 2. Run the repository validator and integrity checks.
 3. Let the core-consumer contract verify that current Gapwise can still compile and route against the candidate dataset.
 4. Merge Data.

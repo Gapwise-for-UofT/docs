@@ -10,7 +10,7 @@ assert.ok(check !== args.includes("--write"), "Choose --check or --write");
 const source = resolve(root, args.find((arg) => arg.startsWith("--source="))?.slice(9) ?? "../ai/contracts/mcp-live-surface.json");
 const target = resolve(root, "contracts/mcp-live-surface.json");
 const bytes = await readFile(source, "utf8").catch(() => {
-  throw new Error(`AI contract missing at ${source}. Check out Gapwise-for-UofT/ai beside Docs or pass --source=<manifest>.`);
+  throw new Error(`AI contract missing at ${source}. Check out GapwiseHQ/ai beside Docs or pass --source=<manifest>.`);
 });
 const manifest = JSON.parse(bytes);
 assert.equal(manifest.contractVersion, 2, "Unsupported MCP manifest contractVersion");
