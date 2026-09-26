@@ -45,4 +45,4 @@ The external AI provider may separately process prompts and tool results visible
 - Handle stale revisions by reading again, not force-overwriting.
 - Stop on revocation or authorization failure.
 
-For deeper review, see the [`ai` privacy model](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/PRIVACY.md), [threat model](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/THREAT_MODEL.md), and [security policy](https://github.com/Gapwise-for-UofT/ai/blob/main/SECURITY.md).
+For deeper review, see the [`ai` privacy model](https://github.com/GapwiseHQ/ai/blob/main/docs/PRIVACY.md), [threat model](https://github.com/GapwiseHQ/ai/blob/main/docs/THREAT_MODEL.md), and [security policy](https://github.com/GapwiseHQ/ai/blob/main/SECURITY.md).

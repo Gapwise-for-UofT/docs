@@ -5,7 +5,7 @@ description: "The 20 tools in the Gapwise AI MCP surface: seven public UTM campu
 
 The Gapwise AI MCP surface contains **20 tools**: seven stateless public UTM campus-intelligence tools, twelve permissioned private read/status/planning tools, and one bounded private write tool.
 
-This catalog is checked against a synchronized copy of AI's [machine-readable live-surface manifest](https://github.com/Gapwise-for-UofT/ai/blob/main/contracts/mcp-live-surface.json). The AI runtime remains authoritative for schemas returned by MCP discovery.
+This catalog is checked against a synchronized copy of AI's [machine-readable live-surface manifest](https://github.com/GapwiseHQ/ai/blob/main/contracts/mcp-live-surface.json). The AI runtime remains authoritative for schemas returned by MCP discovery.
 
 Academic meetings remain source-backed and read-only. Tool handlers do not accept arbitrary SQL, JavaScript, URLs, graph nodes, or generic execute instructions.
 
@@ -56,4 +56,4 @@ Models should read again before making a dependent change because a queued actio
 
 A client can first use delegated schedule/availability tools to establish a user's exact free window and surrounding buildings, then call the stateless public route or explicit gap-window tools. The public tools must not be represented as having discovered private timetable or location information themselves.
 
-For machine-readable argument and output schemas, use the schemas returned by MCP tool discovery from the [canonical service](/ai/connect/). For deeper implementation detail, see the [`ai` tool contract](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/TOOL_CONTRACT.md).
+For machine-readable argument and output schemas, use the schemas returned by MCP tool discovery from the [canonical service](/ai/connect/). For deeper implementation detail, see the [`ai` tool contract](https://github.com/GapwiseHQ/ai/blob/main/docs/TOOL_CONTRACT.md).

@@ -27,4 +27,4 @@ Check that the delegation includes the required write capability and that the ta
 
 That is expected. If the student chooses to reconnect, complete a fresh authorization and permission review. Discard old queued work; do not replay it under the new grant.
 
-For reproducible service or security issues, use the reporting guidance in the [AI repository](https://github.com/Gapwise-for-UofT/ai) without including private student data.
+For reproducible service or security issues, use the reporting guidance in the [AI repository](https://github.com/GapwiseHQ/ai) without including private student data.

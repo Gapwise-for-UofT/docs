@@ -94,6 +94,6 @@ The chosen AI client/provider can process prompts and tool results that the stud
 
 ## Evidence and review limits
 
-The flows are reconciled with the public [private-cloud architecture record](https://github.com/Gapwise-for-UofT/gapwise/blob/main/docs/architecture/private-cloud.md), [core security policy](https://github.com/Gapwise-for-UofT/gapwise/blob/main/SECURITY.md), [AI privacy model](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/PRIVACY.md), [AI threat model](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/THREAT_MODEL.md), and the [CI-checked live MCP manifest](https://github.com/Gapwise-for-UofT/docs/blob/main/contracts/mcp-live-surface.json).
+The flows are reconciled with the public [private-cloud architecture record](https://github.com/GapwiseHQ/gapwise/blob/main/docs/architecture/private-cloud.md), [core security policy](https://github.com/GapwiseHQ/gapwise/blob/main/SECURITY.md), [AI privacy model](https://github.com/GapwiseHQ/ai/blob/main/docs/PRIVACY.md), [AI threat model](https://github.com/GapwiseHQ/ai/blob/main/docs/THREAT_MODEL.md), and the [CI-checked live MCP manifest](https://github.com/GapwiseHQ/docs/blob/main/contracts/mcp-live-surface.json).
 
 Source-backed review is not independent validation. Provider configuration, residency, retention, backup/recovery, production access membership, incident readiness, and any independent test results still require current human/provider evidence. No certification, audit result, penetration-test result, uptime level, or university approval is implied.

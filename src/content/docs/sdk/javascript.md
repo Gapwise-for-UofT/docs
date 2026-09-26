@@ -5,7 +5,7 @@ description: Use the portable typed Gapwise client across Node.js, Bun, Deno, br
 
 The official JavaScript/TypeScript client lives in `sdk/javascript` in the Gapwise repository and targets the canonical `https://api.gapwise.ca/v1` contract. It is one portable TypeScript implementation, not separate Node, Bun, and Deno SDKs.
 
-> Registry status: `@gapwise/sdk@0.1.1` is published on npm and JSR with provenance. The same verified JavaScript SDK is also published as the public, source-adjacent GitHub Packages mirror `@gapwise-for-uoft/sdk@0.1.1`. The different GitHub Packages scope is required by the `Gapwise-for-UofT` organization namespace; it is not a separate SDK.
+> Registry status: `@gapwise/sdk@0.1.1` is published on npm and JSR with provenance. The same verified JavaScript SDK is also mirrored on GitHub Packages under `@gapwisehq/sdk` (historically published as `@gapwise-for-uoft/sdk@0.1.1`). The different GitHub Packages scope is required by the `GapwiseHQ` organization namespace; it is not a separate SDK.
 
 Python is an equal first-party SDK implementation of the same public v1 semantics. See [Python SDK](/sdk/python/).
 
@@ -17,7 +17,7 @@ Python is an equal first-party SDK implementation of the same public v1 semantic
 | Bun | npm/portable source | first-party test/runtime target |
 | Deno | JSR `@gapwise/sdk` | first-party JSR/runtime target verified by the shared release gate |
 | Browser bundlers | npm | dependency-free client using Web `fetch` semantics |
-| GitHub ecosystem | GitHub Packages `@gapwise-for-uoft/sdk` | public source-adjacent mirror of the same JavaScript SDK artifact |
+| GitHub ecosystem | GitHub Packages `@gapwisehq/sdk` | public source-adjacent mirror of the same JavaScript SDK artifact (historical 0.1.1 under `@gapwise-for-uoft/sdk`) |
 | Other edge-style runtimes | npm/JSR where compatible | compatibility should be claimed only after environment-specific evidence |
 
 JSR publishes the TypeScript source entry point directly. npm publishes the compiled package artifact. GitHub Packages mirrors the verified JavaScript SDK under the organization-compatible scope. These distribution channels represent the same SDK API and version line; npm remains the primary npm-compatible installation channel.
@@ -42,9 +42,9 @@ import { Gapwise } from "jsr:@gapwise/sdk@0.1.1";
 
 ## GitHub Packages mirror
 
-The verified `0.1.1` JavaScript artifact is also available from GitHub Packages as `@gapwise-for-uoft/sdk@0.1.1`. GitHub requires package scopes to match the owning organization, so the mirror cannot use the canonical `@gapwise/sdk` registry identity.
+The verified JavaScript artifact is also available from GitHub Packages as `@gapwisehq/sdk` (historical 0.1.1 published under `@gapwise-for-uoft/sdk@0.1.1`). GitHub requires package scopes to match the owning organization, so the mirror cannot use the canonical `@gapwise/sdk` registry identity.
 
-Consumers choosing GitHub Packages must configure the `@gapwise-for-uoft` scope for `https://npm.pkg.github.com` and follow GitHub's npm-registry authentication requirements. Use npm or JSR when you do not specifically need the source-adjacent GitHub registry mirror.
+Consumers choosing GitHub Packages must configure the `@gapwisehq` scope for `https://npm.pkg.github.com` and follow GitHub's npm-registry authentication requirements. Use npm or JSR when you do not specifically need the source-adjacent GitHub registry mirror.
 
 ## Create a client
 

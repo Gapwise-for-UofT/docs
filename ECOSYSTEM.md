@@ -2,19 +2,19 @@
 
 `docs` is the canonical public documentation surface for the seven-repository Gapwise product ecosystem. It describes released behavior and data owned elsewhere; it must not become an independent source of product semantics or campus facts.
 
-All seven first-party product repositories are owned by the **Gapwise** GitHub organization (`Gapwise-for-UofT`). Organization-wide community/default files live in `.github`. Andrew Muratov remains the creator and primary maintainer.
+All seven first-party product repositories are owned by the **Gapwise** GitHub organization (`GapwiseHQ`). Organization-wide community/default files live in `.github`. Andrew Muratov remains the creator and primary maintainer.
 
 ## Owning repositories
 
 | Repository | Authoritative for |
 | --- | --- |
-| `Gapwise-for-UofT/gapwise` | web/PWA behavior, student state, deterministic timetable/gap/routing algorithms, public API v1, OpenAPI, TypeScript + Python SDK source and release workflow, map/product presentation |
-| `Gapwise-for-UofT/android` | native Android implementation, Android device integration, persistence adapters, and Android distribution behavior |
-| `Gapwise-for-UofT/ios` | native iOS implementation, Apple-platform integration, persistence adapters, and iOS distribution behavior |
-| `Gapwise-for-UofT/ai` | OAuth/MCP delegation, tool schemas, permissions, bounded mutations, AI compatibility evidence |
-| `Gapwise-for-UofT/data` | **canonical public University of Toronto campus facts and geometry**, entrances, routing graph data, provenance, schemas, evidence, attribution, validation, and reuse |
-| `Gapwise-for-UofT/docs` | released public developer documentation and documentation information architecture |
-| `Gapwise-for-UofT/status` | operational health and incident communication |
+| `GapwiseHQ/gapwise` | web/PWA behavior, student state, deterministic timetable/gap/routing algorithms, public API v1, OpenAPI, TypeScript + Python SDK source and release workflow, map/product presentation |
+| `GapwiseHQ/android` | native Android implementation, Android device integration, persistence adapters, and Android distribution behavior |
+| `GapwiseHQ/ios` | native iOS implementation, Apple-platform integration, persistence adapters, and iOS distribution behavior |
+| `GapwiseHQ/ai` | OAuth/MCP delegation, tool schemas, permissions, bounded mutations, AI compatibility evidence |
+| `GapwiseHQ/data` | **canonical public University of Toronto campus facts and geometry**, entrances, routing graph data, provenance, schemas, evidence, attribution, validation, and reuse |
+| `GapwiseHQ/docs` | released public developer documentation and documentation information architecture |
+| `GapwiseHQ/status` | operational health and incident communication |
 
 `gapwise` vendors a validated build-time mirror of `data/utm` from the `data` repository at `src/data/utm`. That local path preserves existing imports and deterministic deployment behavior; it is not a second campus-data authority and does not create a runtime dependency on `data.gapwise.ca` or GitHub.
 
@@ -24,7 +24,7 @@ Gapwise timetable identity and web building maps support UTM, UTSG, UTSC, and mi
 
 ## Current developer-platform state
 
-- GitHub organization: `https://github.com/Gapwise-for-UofT`
+- GitHub organization: `https://github.com/GapwiseHQ`
 - Public API: `https://api.gapwise.ca/v1`
 - OpenAPI 3.1: `https://api.gapwise.ca/openapi.json`
 - TypeScript SDK: `@gapwise/sdk`
@@ -32,8 +32,8 @@ Gapwise timetable identity and web building maps support UTM, UTSG, UTSC, and mi
   - JSR `0.1.1` is published with provenance through GitHub Actions OIDC
   - one TypeScript implementation targets Node, Bun, Deno, and browser portability rather than separate runtime SDKs
 - Python SDK: `gapwise==0.1.0` is published on PyPI through Trusted Publishing
-- Android source: `https://github.com/Gapwise-for-UofT/android`
-- iOS source: `https://github.com/Gapwise-for-UofT/ios`
+- Android source: `https://github.com/GapwiseHQ/android`
+- iOS source: `https://github.com/GapwiseHQ/ios`
 - Data: `https://data.gapwise.ca`
 - AI/MCP: `https://ai.gapwise.ca/api/mcp`
 - Status: `https://status.gapwise.ca`

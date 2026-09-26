@@ -60,4 +60,4 @@ Reauthorization is a fresh decision. The student reviews permissions again, and 
 
 The code/database isolation boundary has automated cross-account and ownership regression coverage. Named external clients are a separate evidence gate: ChatGPT, Claude, or another product is not described as fully verified until its real OAuth/read/write/revoke, cross-account refusal, stale-write, and re-auth matrix has completed against the release state.
 
-The [`ai` authentication documentation](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/AUTH.md) contains deeper resource-server and token-validation details for maintainers and security review.
+The [`ai` authentication documentation](https://github.com/GapwiseHQ/ai/blob/main/docs/AUTH.md) contains deeper resource-server and token-validation details for maintainers and security review.

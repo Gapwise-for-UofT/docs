@@ -105,7 +105,7 @@ Authorized plaintext exists transiently in the Gapwise AI runtime during a permi
 
 ## Vulnerability and incident management
 
-**Process commitment.** Reports should be sent through the current repository [security reporting path](https://github.com/Gapwise-for-UofT/gapwise/security). Gapwise will validate scope, preserve evidence, contain exposure, rotate affected credentials where appropriate, remediate, test, and coordinate communication based on impact. Reporters should not include unnecessary student data in a report. AI-service findings can also follow its [security policy](https://github.com/Gapwise-for-UofT/ai/blob/main/SECURITY.md).
+**Process commitment.** Reports should be sent through the current repository [security reporting path](https://github.com/GapwiseHQ/gapwise/security). Gapwise will validate scope, preserve evidence, contain exposure, rotate affected credentials where appropriate, remediate, test, and coordinate communication based on impact. Reporters should not include unnecessary student data in a report. AI-service findings can also follow its [security policy](https://github.com/GapwiseHQ/ai/blob/main/SECURITY.md).
 
 Incident handling prioritizes student safety and data protection: identify affected boundaries, limit further access, preserve a decision log, involve relevant providers, assess notification obligations, restore safely, and document follow-up work. These are process commitments, not guaranteed response times or a claim about historical incident counts. Formal public vulnerability-disclosure and incident-response materials will remain linked here as those separately reviewed artifacts are published.
 
@@ -137,10 +137,10 @@ Before an institutional decision, a human reviewer should confirm production con
 | Public/private API separation and local import | [Platform privacy](/platform/privacy/) | Implementation-verified |
 | OAuth plus student delegation | [Authentication & delegation](/ai/authentication/) | Implementation-verified |
 | AI exclusions and encryption boundary | [AI privacy & security](/ai/privacy/) | Implementation-verified |
-| Read-only academics and bounded queued writes | [Permissions & writes](/ai/permissions/) and [live tool manifest](https://github.com/Gapwise-for-UofT/docs/blob/main/contracts/mcp-live-surface.json) | Implementation-verified |
-| Core maintainer security policy | [`SECURITY.md`](https://github.com/Gapwise-for-UofT/gapwise/blob/main/SECURITY.md) | Implementation/process evidence |
-| Private-cloud design record | [`docs/architecture/private-cloud.md`](https://github.com/Gapwise-for-UofT/gapwise/blob/main/docs/architecture/private-cloud.md) | Implementation design evidence |
-| AI threat and privacy model | [Threat model](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/THREAT_MODEL.md) and [privacy model](https://github.com/Gapwise-for-UofT/ai/blob/main/docs/PRIVACY.md) | Implementation/process evidence |
-| Docs CI and deployment headers | [Docs CI](https://github.com/Gapwise-for-UofT/docs/blob/main/.github/workflows/ci.yml) and [deployment configuration](https://github.com/Gapwise-for-UofT/docs/blob/main/vercel.json) | Implementation-verified |
+| Read-only academics and bounded queued writes | [Permissions & writes](/ai/permissions/) and [live tool manifest](https://github.com/GapwiseHQ/docs/blob/main/contracts/mcp-live-surface.json) | Implementation-verified |
+| Core maintainer security policy | [`SECURITY.md`](https://github.com/GapwiseHQ/gapwise/blob/main/SECURITY.md) | Implementation/process evidence |
+| Private-cloud design record | [`docs/architecture/private-cloud.md`](https://github.com/GapwiseHQ/gapwise/blob/main/docs/architecture/private-cloud.md) | Implementation design evidence |
+| AI threat and privacy model | [Threat model](https://github.com/GapwiseHQ/ai/blob/main/docs/THREAT_MODEL.md) and [privacy model](https://github.com/GapwiseHQ/ai/blob/main/docs/PRIVACY.md) | Implementation/process evidence |
+| Docs CI and deployment headers | [Docs CI](https://github.com/GapwiseHQ/docs/blob/main/.github/workflows/ci.yml) and [deployment configuration](https://github.com/GapwiseHQ/docs/blob/main/vercel.json) | Implementation-verified |
 
 Public records explain design and checked behavior; they do not turn process evidence into independent assurance. This page should be reviewed whenever a trust boundary, processor, authentication flow, encryption design, or AI permission changes.
